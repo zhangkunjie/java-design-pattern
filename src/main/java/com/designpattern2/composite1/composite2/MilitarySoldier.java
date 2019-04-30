@@ -1,0 +1,29 @@
+package com.designpattern2.composite1.composite2;
+
+import java.util.Iterator;
+//Leaf节点
+public class MilitarySoldier implements MilitaryPerson{
+    double salary;
+    String name;
+    MilitarySoldier(String name,double salary){
+          this.name=name;
+          this.salary=salary;
+    }
+    public void add(MilitaryPerson person)  {}
+    public void remove (MilitaryPerson person){}
+    public MilitaryPerson getChild(int index) {
+         return null;
+    }
+    public Iterator<MilitaryPerson>  getAllChildren() {
+         return null;
+    }
+     public boolean isLeaf(){
+         return true;
+    } 
+    public double getSalary(){
+         return salary;
+    }
+    public void setSalary(double salary){
+         this.salary=salary;
+    }
+}
